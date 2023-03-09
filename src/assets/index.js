@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import brandLogo from './brandLogo.svg';
+import logoBrand from './logo-nobg.svg';
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -60,5 +60,5 @@ export {
   carrent,
   jobit,
   tripguide,
-  brandLogo,
+  logoBrand,
 };
