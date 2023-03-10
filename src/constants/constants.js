@@ -39,6 +39,25 @@ import {
       title: "Contact",
     },
   ];
+
+  export const Languages = [
+    {
+      id: "en",
+      name: "English",
+    },
+    {
+      id: "it",
+      name: "Italiano",
+    },
+    {
+      id: "sp",
+      name: "Español",
+    },
+    {
+      id: "fr",
+      name: "Français"
+    }
+  ]
   
   const services = [
     {

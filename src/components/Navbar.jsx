@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+// import i18n from "i18next";
+// import HttpApi from 'i18next-http-backend';
+// import LanguageDetector from 'i18next-browser-languagedetector';
+// import { useTranslation, initReactI18next } from "react-i18next";
 import { styles } from "../styles";
-import { navLinks } from "../constants/constants";
-import { logo, logoBrand, menu, close } from "../assets";
+import { navLinks, Languages } from "../constants/constants";
+import { logoBrand, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [selectedLang, setSelectedLang] = useState('');
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -36,6 +42,15 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+
+          <select 
+          value={selectedLang}
+          onChange={(e) => setSelectedLang(e.target.value)}>
+            {Languages.map((lang) => (
+              <option key={lang.id}>{lang.name}</option>
+            ))}
+          </select> 
+            
         </ul>
         <div className="sm:hidden justify-end flex flex-1 items-center">
           <img
