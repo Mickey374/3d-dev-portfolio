@@ -31,6 +31,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import eng from "./language/eng.svg";
+import fra from "./language/fra.svg";
+import ita from "./language/ita.svg";
+import spa from "./language/spain.svg";
+import us from "./language/us.svg";
+
 export {
   logo,
   backend,
@@ -61,4 +67,9 @@ export {
   jobit,
   tripguide,
   logoBrand,
+  eng,
+  fra,
+  ita,
+  spa,
+  us,
 };

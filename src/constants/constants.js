@@ -23,6 +23,11 @@ import {
     jobit,
     tripguide,
     threejs,
+    eng,
+    fra,
+    ita,
+    spa,
+    us,
   } from "../assets";
   
   export const navLinks = [
@@ -44,18 +49,26 @@ import {
     {
       id: "en",
       name: "English",
+      abb: "EN",
+      image: eng,
     },
     {
       id: "it",
       name: "Italiano",
+      abb: "IT",
+      image: ita,
     },
     {
-      id: "sp",
+      id: "es",
       name: "Español",
+      abb: "ES",
+      image: spa,
     },
     {
       id: "fr",
-      name: "Français"
+      name: "Français",
+      abb: "FR",
+      image: fra,
     }
   ]
   
