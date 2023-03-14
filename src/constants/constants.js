@@ -4,7 +4,8 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    java,
+    python,
     html,
     css,
     reactjs,
@@ -15,6 +16,8 @@ import {
     git,
     figma,
     docker,
+    sql,
+    xd,
     cnr,
     maverick,
     techaide,
@@ -100,12 +103,16 @@ import {
       icon: css,
     },
     {
+      name: "My SQL",
+      icon: sql,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Python",
+      icon: python,
     },
     {
       name: "React JS",
@@ -124,6 +131,10 @@ import {
       icon: nodejs,
     },
     {
+      name: "Java",
+      icon: java,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
     },
@@ -134,6 +145,10 @@ import {
     {
       name: "git",
       icon: git,
+    },
+    {
+      name: "Adobe XD",
+      icon: xd,
     },
     {
       name: "figma",

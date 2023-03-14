@@ -10,6 +10,10 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import java from './tech/java.png';
+import python from './tech/python.png';
+import sql from './tech/mysql.png';
+import xd from './tech/xd.png';
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -19,7 +23,6 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import cnr from './company/cnr.png';
@@ -48,6 +51,10 @@ export {
   close,
   css,
   docker,
+  sql,
+  java,
+  python,
+  xd,
   figma,
   git,
   html,
@@ -57,7 +64,6 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
   threejs,
   cnr,
   maverick,
