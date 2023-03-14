@@ -8,6 +8,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants/constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { FaDownload } from 'react-icons/fa';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -46,6 +47,14 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const downloadCV = () => {
+    // Replace the URL below with the location of your CV file
+    const fileUrl = 'https://example.com/my-cv.pdf';
+    
+    // Use the window.location.href property to initiate the download
+    window.location.href = fileUrl;
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -58,6 +67,15 @@ const Experience = () => {
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
+      </div>
+      <div className="mt-10 flex flex-col">
+        <button 
+        onClick={downloadCV}
+        className='border border-solid border-gray-300 bg-transparent font-bold p-4 rounded flex justify-center'
+        >
+          <FaDownload className="mr-20"/>
+          Check My CV
+        </button>
       </div>
     </>
   );
