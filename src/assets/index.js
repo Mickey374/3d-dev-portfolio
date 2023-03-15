@@ -35,6 +35,10 @@ import uslc from './uslc.png';
 import afbot from './afbot.png';
 import moviesapp from './moviesapp.png';
 
+import kpingbi from './testimonials/kpingbi.png';
+import karigo from './testimonials/karigo.png';
+import jeremy from './testimonials/jeremy.png';
+
 import eng from "./language/eng.svg";
 import fra from "./language/fra.svg";
 import ita from "./language/ita.svg";
@@ -74,6 +78,9 @@ export {
   uslc,
   afbot,
   moviesapp,
+  kpingbi,
+  karigo,
+  jeremy,
   logoBrand,
   eng,
   fra,

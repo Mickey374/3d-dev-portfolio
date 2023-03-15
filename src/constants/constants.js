@@ -25,6 +25,9 @@ import {
     uslc,
     afbot,
     moviesapp,
+    kpingbi,
+    karigo,
+    jeremy,
     threejs,
     eng,
     fra,
@@ -219,27 +222,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I wanted an online presence for my school. We had thought of this for a long time until we talked to Michael.He designed the interface and developed it from prototype to a live version. Now, I told him, you will manage the website forever because of your technical abilities.",
+      name: "Michael Kpingbi",
+      designation: "Founder",
+      company: "Unique Star Learning Center",
+      image: kpingbi,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "The idea of Karigo is to create a bridge between vendors with electronic shops to buyers within industries. Michael designed the UI which captured the full intent. The prototype version will be released and a lot of clients are excited already.He listens.",
+      name: "Devbay Fouders",
+      designation: "Co-Founders",
+      company: "Devbay LLC",
+      image: karigo,
     },
     {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      testimonial:"Michael participated in a 4-month Data Science training program, where he learned data science processes, including data exploration, cleansing, feature extraction, and modelling. He worked well in small groups, was curious, open-minded, and mentored other students.",
+      name: "Jeremy Banning",
+      designation: "Associate Director-Data Science & Analytics",
+      company: "Raytheon Technologies",
+      image: jeremy,
     },
   ];
   
