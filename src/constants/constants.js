@@ -22,9 +22,9 @@ import {
     maverick,
     techaide,
     freelancer,
-    carrent,
-    jobit,
-    tripguide,
+    uslc,
+    afbot,
+    moviesapp,
     threejs,
     eng,
     fra,
@@ -245,30 +245,31 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "USLC School Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A website that showcases the facilities and activities of Unique Star Learning Center, located within the Western region of Ghana. The news section integrates a Couch Management System for news and article publications.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: uslc,
+      source_code_link: "https://github.com/Mickey374/UniqueStar-Website",
+      url: "https://uniquestarlearningcenter.com/",
     },
     {
-      name: "Job IT",
+      name: "Karigo Ecommerce App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that connects vendors to buyers to create a seamless market for their electronics products available on a common platform. With different payment modules, buyers have an option to pay in installment with payment reminders to vendors.",
       tags: [
         {
           name: "react",
@@ -283,29 +284,31 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: afbot,
+      source_code_link: "https://github.com/Mickey374/afbot",
+      url: "https://github.com/Mickey374/afbot",
     },
     {
-      name: "Trip Guide",
+      name: "Movies Review App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive movies review application designed with Spring Boot[JAVA] and ReactJS that allows users to view movies trailers and write reviews. Movies and Reviews are stored in a remote MongoDB  cluster with a set of predefined APIs.",
       tags: [
         {
-          name: "nextjs",
+          name: "springboot",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "react",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "mongodb",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: moviesapp,
+      source_code_link: "https://github.com/Mickey374/Movies-Review-FullStack-App",
+      url: "https://github.com/Mickey374/Movies-Review-FullStack-App",
     },
   ];
   

@@ -5,6 +5,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import LinkUrl from './url.png';
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -30,9 +31,9 @@ import maverick from "./company/maverick.png";
 import techaide from './company/techaide.png';
 import freelancer from './company/freelancer.png';
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import uslc from './uslc.png';
+import afbot from './afbot.png';
+import moviesapp from './moviesapp.png';
 
 import eng from "./language/eng.svg";
 import fra from "./language/fra.svg";
@@ -47,6 +48,7 @@ export {
   mobile,
   web,
   github,
+  LinkUrl,
   menu,
   close,
   css,
@@ -69,9 +71,9 @@ export {
   maverick,
   techaide,
   freelancer,
-  carrent,
-  jobit,
-  tripguide,
+  uslc,
+  afbot,
+  moviesapp,
   logoBrand,
   eng,
   fra,
