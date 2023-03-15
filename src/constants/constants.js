@@ -231,7 +231,7 @@ import {
     {
       testimonial:
         "The idea of Karigo is to create a bridge between vendors with electronic shops to buyers within industries. Michael designed the UI which captured the full intent. The prototype version will be released and a lot of clients are excited already.He listens.",
-      name: "Devbay Fouders",
+      name: "Devbay Founders",
       designation: "Co-Founders",
       company: "Devbay LLC",
       image: karigo,
