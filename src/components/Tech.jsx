@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Tech = () => {
   return (
-    <>
+    <div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Frameworks and Tech Tools</p>
         <h2 className={styles.sectionHeadText}>Tech Stacks I Use.</h2>
@@ -19,7 +19,7 @@ const Tech = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

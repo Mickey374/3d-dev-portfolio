@@ -6,6 +6,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -16,9 +17,43 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => { };
 
-  const handleSubmit = (e) => { };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value })
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs.send(
+      'service_fc4mj2p',
+      'template_wh8tcu5',
+      {
+        from_name: form.name,
+        to_name: 'Michael',
+        from_email: form.email,
+        to_email: 'asantemichael37483@gmail.com',
+        message: form.message,
+      },
+      'EovCyzazF7qmo0tbX').then(() => {
+        setLoading(false);
+        alert('Thank you. I will revert as soon as I can.');
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+        alert('Ooops something went wrong.')
+      })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -71,18 +106,18 @@ const Contact = () => {
             />
           </label>
 
-          <button 
-          className="bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-xl border border-solid border-gray-300"
-          type="submit">
-            {loading ? 'Sending'  : 'Send'}
-            </button>
+          <button
+            className="bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-xl border border-solid border-gray-300"
+            type="submit">
+            {loading ? 'Sending' : 'Send'}
+          </button>
         </form>
       </motion.div>
       <motion.div
-      variants={slideIn("right", "tween", 0.2, 1)}
-      className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-      <EarthCanvas />
+        <EarthCanvas />
       </motion.div>
     </div>
   );

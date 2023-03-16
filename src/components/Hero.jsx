@@ -16,7 +16,7 @@ const Hero = () => {
             <span className="text-[#915eff]"> Michael</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I bring Products, 3D Visuals, User Experiences <br className="sm:block hidden" /> & Web Apps from Conception to Reality
+            I bring Products, Data Models, User Experiences <br className="sm:block hidden" /> & Web Apps from Conception to Reality
           </p>
         </div>
       </div>
@@ -42,4 +42,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

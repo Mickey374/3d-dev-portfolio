@@ -20,6 +20,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
   )
