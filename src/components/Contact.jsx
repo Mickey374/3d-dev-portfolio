@@ -101,15 +101,15 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder='Describe your Message/Need'
+              placeholder='Hi, we need a product designer for our products at Company X. Can you spend sometime to discuss this?'
               className="bg-tertiary mb-4 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
           <button
-            className="bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-xl border border-solid border-gray-300"
+            className="bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-xl border border-solid border-gray-300 hover:bg-white hover:text-black  transition duration-500 ease-in-out"
             type="submit">
-            {loading ? 'Sending' : 'Send'}
+            {loading ? 'Sending' : 'Shoot'}
           </button>
         </form>
       </motion.div>
