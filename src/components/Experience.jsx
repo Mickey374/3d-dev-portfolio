@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => (
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div
-      className="flex justify-center items-center w-full h-full"
+        className="flex justify-center items-center w-full h-full"
       >
         <img
           src={experience.icon}
@@ -30,14 +30,14 @@ const ExperienceCard = ({ experience }) => (
   >
     <div>
       <h3 className="text-white text-[24px] font-semibold">{experience.title}</h3>
-      <p className="text-secondary text-[16px] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
+      <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>{experience.company_name}</p>
     </div>
 
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
-        <li 
-        key={`experience-point-${index}`}
-        className="text-white-100 text-[14px] pl-1 tracking-wider"
+        <li
+          key={`experience-point-${index}`}
+          className="text-white-100 text-[14px] pl-1 tracking-wider"
         >
           {point}
         </li>
@@ -46,13 +46,17 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
+// onClick={() => window.open(source_code_link, "_blank")}
+
 const Experience = () => {
+
   const downloadCV = () => {
     // Replace the URL below with the location of your CV file
-    const fileUrl = 'https://example.com/my-cv.pdf';
-    
+    const fileUrl = 'https://drive.google.com/file/d/18w0-EzsHu2NhOb3MQV14eBhTOCBIQL5S/view?usp=share_link';
+
     // Use the window.location.href property to initiate the download
-    window.location.href = fileUrl;
+    // window.location.href = fileUrl;
+    window.open(fileUrl, "_blank")
   };
 
   return (
@@ -69,11 +73,11 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
       <div className="mt-10 flex flex-col">
-        <button 
-        onClick={downloadCV}
-        className='border border-solid border-gray-300 bg-transparent font-bold p-4 rounded flex justify-center'
+        <button
+          onClick={downloadCV}
+          className='border border-solid border-gray-300 bg-transparent font-bold p-4 rounded flex justify-center'
         >
-          <FaDownload className="mr-20"/>
+          <FaDownload className="mr-20" />
           Check My CV
         </button>
       </div>

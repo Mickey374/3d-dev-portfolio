@@ -41,7 +41,7 @@ const Navbar = () => {
           ))}
 
           <select
-            className="cursor-pointer bg-transparent border border-gray-300"
+            className="cursor-pointer bg-transparent border border-gray-300 p-1"
             value={selectedLang}
             onChange={(e) => setSelectedLang(e.target.value)}>
             {Languages.map((lang) => (
